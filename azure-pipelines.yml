@@ -29,8 +29,7 @@ stages:
   jobs:  
   - job: Archive
     displayName: Archive
-    pool:
-      vmImage: $(vmImageName)
+    pool:Mypool
     steps:   
     - task: AzureAppServiceSettings@1
       inputs:
